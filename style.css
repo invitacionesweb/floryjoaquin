@@ -1,3 +1,11 @@
+:root {
+    --color-0:#ffffff;
+    --color-1:#846145;
+    --color-2:#f8f3ed;
+    --color-3:#C5A073;
+    --font-principal:'MiFuente';
+    --font-secundaria:'MiFuente2';
+}
 
 @font-face {
   font-family: "MiFuente";
@@ -493,7 +501,7 @@ nav {
     padding: 40PX 0PX;
     width: 100%;
     margin: auto;
-    background-color: var(--color-1);
+    background-color: var(--color-3);
     display: flex;
     flex-direction: column;
     height: auto;
@@ -518,7 +526,7 @@ nav {
     max-width: 700px;      /* ðŸ‘ˆ opcional: tope en pantallas grandes */
     height: auto;
     color: var(--color-2);
-    background-color: var(--color-1);
+    background-color: var(--color-3);
     text-align: center;
     font-family: var(--font-principal);
     line-height: 1;
