@@ -1,11 +1,3 @@
-:root {
-    --color-0:#ffffff;
-    --color-1:#846145;
-    --color-2:#f8f3ed;
-    --color-3:#C5A073;
-    --font-principal:'MiFuente';
-    --font-secundaria:'MiFuente2';
-}
 
 @font-face {
   font-family: "MiFuente";
@@ -231,7 +223,7 @@ nav {
 
 .bloque {
     text-align: center;
-    margin: 0 10px; /* Añadido espacio entre bloques para mejorar la apariencia */
+    margin: 0 10px; /* AÃ±adido espacio entre bloques para mejorar la apariencia */
     }
 
 .numero {
@@ -265,7 +257,7 @@ nav {
         font-family: var(--font-principal);
         max-width: 800px;
 }
-    /*DATOS UBICACIÓN*/
+    /*DATOS UBICACIÃ“N*/
 
     .datos-ubicacion {
        
@@ -373,10 +365,10 @@ nav {
     
 }
 .icono2 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   top: -40px;
   left: -40px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 5px;
 }
 .icono2 img {
@@ -384,10 +376,10 @@ nav {
 }
 
 .icono3 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   bottom: -80px;
   right: 0px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 0px;
 }
 .icono3 img {
@@ -456,7 +448,10 @@ nav {
     font-size: 2.1rem;
     line-height: 1;
 }
-
+.timeline .iconos-block .timing-text {
+    font-family: var(--font-principal);
+    padding: 16px 0;
+}
 
 .regalos {
     background-image: url(./img-editable/textura3.png);
@@ -498,7 +493,7 @@ nav {
     padding: 40PX 0PX;
     width: 100%;
     margin: auto;
-    background-color: var(--color-3);
+    background-color: var(--color-1);
     display: flex;
     flex-direction: column;
     height: auto;
@@ -519,11 +514,11 @@ nav {
 .accordion-item {
     border: 1px solid var(--color-2);
     margin: 4px auto;
-    width: 80vw;           /* 👈 agregado: ancho fijo */
-    max-width: 700px;      /* 👈 opcional: tope en pantallas grandes */
+    width: 80vw;           /* ðŸ‘ˆ agregado: ancho fijo */
+    max-width: 700px;      /* ðŸ‘ˆ opcional: tope en pantallas grandes */
     height: auto;
     color: var(--color-2);
-    background-color: var(--color-3);
+    background-color: var(--color-1);
     text-align: center;
     font-family: var(--font-principal);
     line-height: 1;
@@ -589,10 +584,10 @@ nav {
 }
 
 .icono4 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   top: -40px;
   left: -40px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 5px;
 }
 .icono4 img {
@@ -600,20 +595,20 @@ nav {
 }
 
 .icono5 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   bottom: -80px;
   right: 0px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 0px;
 }
 .icono5 img {
     width: 160px;
 }
 .icono6 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   bottom: -46px;
   left: 0px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 0px;
 }
 .icono6 img {
@@ -624,7 +619,7 @@ nav {
 .forms {
    
     text-align: center;
-    padding: 40px 0 40px 0;
+    padding: 40px 0 20px 0;
     background-image: url(./img-editable/textura3.png);
    padding:96px 0 78px 0;
     background-size: cover;
@@ -636,7 +631,7 @@ nav {
 
 
 .forms p {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     padding: 10px 0 20px 0;
     margin: 0;
     font-family: var(--font-principal);
@@ -652,6 +647,13 @@ nav {
     margin: auto;
     gap: 10px;
 }
+.information-bloque .botones a {
+    width: 100px;
+}
+label .grupo-opciones {
+    font-family: var(--font-principal);
+   
+}
 .formulario select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -663,13 +665,6 @@ nav {
   background-size: 12px 8px;
   padding-right: 2.2rem;
 }
-.information-bloque .botones a {
-    width: 100px;
-}
-label .grupo-opciones {
-    font-family: var(--font-principal);
-   
-}
 .formulario {
      color: var(--color-3);
     max-width: 500px;
@@ -677,8 +672,22 @@ label .grupo-opciones {
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 10PX;
 }
+
+.invitado-bloque {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.invitado-titulo {
+    font-family: var(--font-principal);
+    padding: 30px 0 10px 0;
+    font-size: 1.2rem;
+}
+
 .formulario .formtitle {
     font-family: var(--font-principal);
     color: var(--color-3);
@@ -711,14 +720,14 @@ label .grupo-opciones {
   display: flex;
   width: 10px;
   align-items: center;
-  font-family: var(--font-principal); /* Cambiá esto por el nombre real de tu fuente secundaria */
+  font-family: var(--font-principal); /* CambiÃ¡ esto por el nombre real de tu fuente secundaria */
   color: var(--color-principal); /* Este es tu color principal, definilo antes o reemplazalo por un valor hex como #A3A87B */
   font-size: 1em;
   gap: 6px;
 }
 
 .radio-option input[type="radio"] {
-  accent-color: var(--color-terciario); /* Cambia el color del círculo si el navegador lo soporta */
+  accent-color: var(--color-terciario); /* Cambia el color del cÃ­rculo si el navegador lo soporta */
 }
 .etiqueta {
    font-family: var(--font-principal);
@@ -736,7 +745,7 @@ label .grupo-opciones {
 .formulario textarea {
   background-color: var(--color-0);
   border: none;
-   font-family: Arial, Helvetica, sans-serif;
+font-family: 'Inter', sans-serif;
   padding: 0.8rem;
   font-size: 1rem;
   color: #a3a49d;
@@ -748,7 +757,7 @@ label .grupo-opciones {
 .formulario input::placeholder,
 .formulario textarea::placeholder,
 .formulario select {
-  font-family: inherit;
+  font-family: 'Inter', sans-serif;
 }
 
 .formulario textarea::placeholder {
@@ -782,10 +791,10 @@ label .grupo-opciones {
     font-family: var(--font-principal);
 }
 .icono10 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   top: -70px;
   left: -40px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 5px;
 }
 .icono10 img {
@@ -893,17 +902,17 @@ footer p {
     }
     .logoflor {
         max-width: 100vw; /* Se ajusta al ancho de la pantalla */
-        width: 60px; /* Ajusta el tamaño a algo más pequeño para móviles */
-        left: -65px; /* Ajusta la posición para que no interfiera con la imagen de fondo */
+        width: 60px; /* Ajusta el tamaÃ±o a algo mÃ¡s pequeÃ±o para mÃ³viles */
+        left: -65px; /* Ajusta la posiciÃ³n para que no interfiera con la imagen de fondo */
         top: 750px;
         z-index: 3;
        
     }
     .logoflor2 {
         max-width: 100vw; /* Se ajusta al ancho de la pantalla */
-        width: 100vw; /* Ajusta el tamaño a algo más pequeño para móviles */
+        width: 100vw; /* Ajusta el tamaÃ±o a algo mÃ¡s pequeÃ±o para mÃ³viles */
         top: 1360px;
-        overflow-x: hidden; /* También agregarlo a html */
+        overflow-x: hidden; /* TambiÃ©n agregarlo a html */
         transform: scaleX(-1);
     }
     .logoflor2 img {
