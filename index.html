@@ -15,6 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <title>FLORENCIA Y JOAQUÍN</title>
+  <style>
+  #bloque-pago {
+    display: contents;
+  }
+</style>
 </head>
 <body>
 
@@ -172,8 +177,9 @@
         <!-- REEMPLAZAR el action por la URL del Apps Script de Flor y Joaquín -->
         <form name="asistenciaform" method="POST" action="https://script.google.com/macros/s/AKfycbycRjXObTr3Juufpm7KnjuchJFcC0KEBiCm4hIBvSYcZTirNE-Vv2VCjiGyUCcywpMwvg/exec" class="formulario">
 
+ 
     <label data-aos="fade-up" class="formtitle">Sólo faltás vos, ¿venís?</label>
-
+ 
     <div class="radio-group">
         <label class="radio-option">
         <input type="radio" name="ASISTENCIA" value="sí" required />
@@ -184,10 +190,10 @@
         <span>No</span>
         </label>
     </div>
-
+ 
     <input type="text" name="NOMBRE" placeholder="Nombre" required />
     <input type="text" name="APELLIDO" placeholder="Apellido" required />
-
+ 
     <select name="DIETA" required>
         <option value="" disabled selected>¿Alguna dieta especial?</option>
         <option value="Nada">Nada / Como de todo</option>
@@ -195,16 +201,31 @@
         <option value="Vegano">Vegano</option>
         <option value="Celíaco">Celíaco</option>
     </select>
-
+ 
+    <div id="bloque-pago">
+        <select name="TIPOTARJETA" id="tipoTarjeta" required>
+            <option value="" disabled selected>Tipo de tarjeta</option>
+            <option value="Adulto">Adulto ($120.000)</option>
+            <option value="Niño 5 a 10">Niño de 5 a 10 años ($65.000)</option>
+        </select>
+ 
+        <select name="FORMAPAGO" id="formaPago" required>
+            <option value="" disabled selected>¿Cómo vas a abonar tu tarjeta?</option>
+            <option value="1 pago">En 1 solo pago</option>
+            <option value="2 cuotas">En 2 cuotas</option>
+            <option value="3 cuotas">En 3 cuotas</option>
+        </select>
+    </div>
+ 
     <textarea name="MENSAJE" placeholder="Dejale un mensaje a los novios 🤍"></textarea>
     <textarea name="CANCION" placeholder="Recomendale una canción al DJ 🎶"></textarea>
-
+ 
     <button type="submit" class="boton">ENVIAR</button>
 </form>
-
+ 
         <p data-aos="fade-up">RECORDÁ COMPLETAR UN FORMULARIO POR PERSONA. <br> HACELO ANTES DEL 31 DE ENERO DE 2027.</p>
     </div>
-
+ 
 
     <div class="novios">
         <img src="./img-editable/fotos2.png" alt="">
